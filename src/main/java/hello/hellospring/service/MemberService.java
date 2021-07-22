@@ -9,14 +9,14 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
     //repository를 직접 생성하는 것이 아니라, 외부에서 넣어주도록 변경.
     //MemberService입장에서 외부에서 Repository를 주입받음 = Dependancy Injection(DI)
-    @Autowired
+    //@Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
